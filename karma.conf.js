@@ -3,7 +3,7 @@ module.exports = function(config) {
 
         basePath: '.',
 
-        frameworks: ['jasmine'],
+        frameworks: ['jasmine','systemjs'],
 
         files: [
             // paths loaded by Karma
@@ -43,7 +43,8 @@ module.exports = function(config) {
         plugins: [
             'karma-jasmine',
             'karma-coverage',
-            'karma-phantomjs-launcher'
+            'karma-phantomjs-launcher',
+            'karma-systemjs'
         ],
 
         // Coverage reporter generates the coverage
